@@ -1,6 +1,9 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1 
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1.813
 
-RUN apt-get update -y \
-    && apt-get -y --no-install-recommends install software-properties-common \
-    && apt-get -y --no-install-recommends install openjdk-11-jdk \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update -y
+RUN apt-get -y --no-install-recommends install software-properties-common
+RUN echo 'deb http://ftp.debian.org/debian stretch-backports main' | tee /etc/apt/sources.list.d/stretch-backports.list
+RUN apt-get update -y
+RUN apt-get -y --no-install-recommends install openjdk-11-jdk
+RUN rm -rf /var/lib/apt/lists/*
+
