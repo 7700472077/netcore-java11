@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2.110
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2.7
 
 # RUN mkdir /usr/share/man/man1/
 RUN apt-get update -y
