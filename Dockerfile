@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2.207
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim
 
 RUN apt-get update -y
 RUN apt-get -y --no-install-recommends install software-properties-common
@@ -6,4 +6,3 @@ RUN echo 'deb http://ftp.debian.org/debian stretch-backports main' | tee /etc/ap
 RUN apt-get update -y
 RUN apt-get -y --no-install-recommends install openjdk-11-jdk
 RUN rm -rf /var/lib/apt/lists/*
-
