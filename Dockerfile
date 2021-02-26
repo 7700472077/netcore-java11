@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1.813
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2.207
 
 RUN apt-get update -y
 RUN apt-get -y --no-install-recommends install software-properties-common
