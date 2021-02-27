@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2.402
 
-RUN mkdir /usr/share/man/man1/
+# RUN mkdir /usr/share/man/man1/
 RUN apt-get update -y
 RUN apt-get -y --no-install-recommends install software-properties-common
 RUN echo 'deb http://ftp.debian.org/debian stretch-backports main' | tee /etc/apt/sources.list.d/stretch-backports.list
