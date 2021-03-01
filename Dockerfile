@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2.402
 
 # RUN mkdir /usr/share/man/man1/
 RUN apt-get update -y
