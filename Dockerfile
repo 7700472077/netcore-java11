@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2.402
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0.103
 
 # RUN mkdir /usr/share/man/man1/
 RUN apt-get update -y
